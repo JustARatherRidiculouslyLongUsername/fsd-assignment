@@ -2,14 +2,15 @@
   margin-top: 2em;
   margin-bottom: 1em;
 }
-
-.form-check {
-  display: flex;
-  justify-content: center;
-  margin-bottom: .5em;
-  font-size: 18px;
-}
-
 .form-check-input {
   margin-right: 10px;
+}
+
+.card {
+  margin: 1em;
+}
+
+.striked {
+  color: rgba(185, 176, 176, 0.603);
+  text-decoration: line-through;
 }

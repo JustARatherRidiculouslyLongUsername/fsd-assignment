@@ -22,13 +22,16 @@
 
     <main>
       <input class="form-control form-control-lg add-todo-input bg-transparent rounded" type="text"
-        placeholder="Take out the trash">
+        placeholder="Eg: Take out the trash">
 
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Do the laundry
-          </label>
+        <div class="card" onclick="(e) => {
+          console.log(e.target.children[0].children[0].checked)}">
+          <div class="card-body">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange="checkboxHandler">
+            <label class="form-check-label" for="flexCheckDefault">
+              Do the laundry
+            </label>
+          </div>
         </div>
     </main>
   </div>
